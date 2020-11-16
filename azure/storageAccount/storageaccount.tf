@@ -52,17 +52,10 @@ resource "azurerm_storage_container" "sc" {
     container_access_type         =     var.saVars["container_access_type"]
 }
 
-variable "saCount" {
-    default     =   2
-}
+// resource "local_file" "creds" {
+//     filename                      =     "./sacreds.txt"
+//     content                       =     join(",", [azurerm_storage_account.sa.name], [azurerm_storage_account.sa.primary_access_key] )
+// }
 
-variable "saVars" {
-    description  =  "Variables for Storage accounts and containers"
-    type         =  map(string)
-    default      =  {
-        "account_tier"                  =    "Standard"
-        "account_replication_type"      =    "LRS"
-        "container_name"                =    "diagnostics"
-        "container_access_type"         =    "private"
-    }
-}
+
+

@@ -8,10 +8,6 @@
 
 ## Resources in this module
 
-- A Resource Group
-- A Virtual network with a Subnet
-- A Network Security Group
-- Subnet and NSG Association
 - A Public IP Address
 - A Network Interface
 - A Windows Virtual Machine

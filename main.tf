@@ -37,14 +37,23 @@ provider "azuread" {
     alias           =   "ad"
 }
 
+
+// module "windows-server" {
+//     source  =   "./azure/WindowsServer2019"
+// }
+
+// module "winvm" {
+//     source =    "./azure/Windows10-ExistingInfra"
+// }
+
+
+
 // module "aks" {
 //     source    =     "./azure/aks"
 //     env       =     "dev"
 // }
 
-// module "winvm" {
-//     source = "./azure/windowsVM"
-// }
+
 
 // module "customrole" {
 //     source  =   "./azure/custom-roles"
