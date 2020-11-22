@@ -6,9 +6,9 @@
 
 terraform {
     backend "azurerm" {
-        resource_group_name     =   "Jenkins"
-        storage_account_name    =   "tfbackend2020"
-        container_name          =   "tfremote"
+        resource_group_name     =   "remote-state"
+        storage_account_name    =   "terraformlearn0702"
+        container_name          =   "tfstate"
         key                     =   "terraform.tfstate"
     }
 }
@@ -63,7 +63,7 @@ provider "azuread" {
 //     source  =   "./azure/provisioners-example"
 // }
 
-// module "linuxvm" {
-//     source  =   "./azure/linuxVM"
-// }
+module "linuxvm" {
+    source  =   "./azure/linuxVM"
+}
 
