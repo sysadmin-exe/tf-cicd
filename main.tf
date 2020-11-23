@@ -9,7 +9,7 @@ terraform {
         resource_group_name     =   "remote-state"
         storage_account_name    =   "terraformlearn0702"
         container_name          =   "tfstate"
-        key                     =   "terraform.tfstate"
+        key                     =   "statefile.tfstate"
     }
 }
 
